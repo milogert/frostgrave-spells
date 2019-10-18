@@ -1,7 +1,7 @@
 export const SELECT_SPELL = 'SELECT_SPELL'
 export const PREVIOUS_SPELL = 'PREVIOUS_SPELL'
 export const NEXT_SPELL = 'NEXT_SPELL'
-export const STAR_SPELL = 'STAR_SPELL'
+export const TOGGLE_STAR = 'TOGGLE_STAR'
 export const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER'
 export const SET_SORT_FILTER = 'SET_SORT_FILTER'
 
@@ -24,9 +24,9 @@ function makeActionCreator(type, ...argNames) {
   }
 }
 
-export const selectSpell = makeActionCreator(SELECT_SPELL, 'name')
+export const selectSpell = makeActionCreator(SELECT_SPELL, 'id')
 export const previousSpell = makeActionCreator(PREVIOUS_SPELL)
 export const nextSpell = makeActionCreator(NEXT_SPELL)
-export const starSpell = makeActionCreator(STAR_SPELL, 'name')
+export const toggleStar = makeActionCreator(TOGGLE_STAR, 'id')
 export const setVisibilityFilter = makeActionCreator(SET_VISIBILITY_FILTER, 'filter')
 export const setSortFilter = makeActionCreator(SET_SORT_FILTER, 'filter')

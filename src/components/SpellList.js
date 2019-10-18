@@ -1,17 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import SpellItem from './SpellItem'
-import spells from '../spells'
+import SpellEntry from './SpellEntry'
 
-const SpellList = ({ onSpellClick }) => (
+const SpellList = ({ spells, onSpellClick }) => (
   <div>
     {spells.map((spell, index) => (
-      <SpellItem key={index} {...spell} onClick={() => onSpellClick(index)}/>
+      <SpellEntry key={index} id={index} {...spell} onClick={() => onSpellClick(index)}/>
     ))}
   </div>
 )
 
 SpellList.propTypes = {
+  spells: PropTypes.object.isRequired,
   onSpellClick: PropTypes.func.isRequired,
 }
 
