@@ -1,11 +1,13 @@
 import { combineReducers } from 'redux'
-import allSpells from './allSpells'
+import {allSpells} from './allSpells'
 import {
   SET_VISIBILITY_FILTER,
+  SET_SCHOOL_FILTER,
   SELECT_SPELL,
   TOGGLE_STAR,
   SortFilters,
   VisibilityFilters,
+  SchoolFilters,
 } from './actions'
 
 const visibilityFilter = (state = VisibilityFilters.SHOW_ALL, action) => {
@@ -19,6 +21,15 @@ const visibilityFilter = (state = VisibilityFilters.SHOW_ALL, action) => {
 
 const sortFilter = (state = SortFilters.SORT_ALPHA, action) => {
     return state
+}
+
+const schoolFilter = (state = SchoolFilters.SCHOOL_ALL, action) => {
+  switch (action.type) {
+    case SET_SCHOOL_FILTER:
+      return action.school
+    default:
+      return state
+  }
 }
 
 const spell = (state = {}, action) => {
@@ -47,6 +58,7 @@ const spells = (state = allSpells, action) => {
 const spellBook = combineReducers({
   visibilityFilter,
   sortFilter,
+  schoolFilter,
   spell,
   spells,
 })

@@ -11,7 +11,7 @@ const SpellList = ({ spells, onSpellClick }) => (
 )
 
 SpellList.propTypes = {
-  spells: PropTypes.object.isRequired,
+  spells: PropTypes.array.isRequired,
   onSpellClick: PropTypes.func.isRequired,
 }
 
