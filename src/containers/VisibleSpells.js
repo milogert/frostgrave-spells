@@ -1,30 +1,47 @@
 import { connect } from 'react-redux'
-import { selectSpell } from '../actions'
+import { selectSpell, toggleSchoolOpen } from '../actions'
 import SpellList from '../components/SpellList'
-import {VisibilityFilters} from '../actions'
+import {VisibilityFilters, SchoolFilters} from '../actions'
 
-const getVisibleSpells = (spells, filter) => {
-  switch (filter) {
+const getVisibleSpells = (spells, starredFilter, schoolFilter) => {
+  let visibleSpells;
+  switch (starredFilter) {
     case VisibilityFilters.SHOW_ALL:
-      return spells
+      visibleSpells = spells
+      break;
     case VisibilityFilters.SHOW_STARRED:
-      return spells.filter(s => s.starred)
+      visibleSpells = spells.filter(s => s.starred)
+      break;
     default:
-      return spells
+      visibleSpells = spells
   }
+
+  switch (schoolFilter) {
+    case SchoolFilters.ALL:
+      visibleSpells = visibleSpells
+      break;
+    default:
+      visibleSpells = visibleSpells.filter(s => s.school === schoolFilter)
+  }
+
+  return visibleSpells
 }
 
 const mapStateToProps = state => {
   return {
-    spells: getVisibleSpells(state.spells, state.visibilityFilter)
+    schoolOpen: state.schoolOpen,
+    spells: getVisibleSpells(state.spells, state.visibilityFilter, state.schoolFilter)
   }
 }
 
 const mapDispatchToProps = dispatch => {
   return {
-    onSpellClick: id => {
-      dispatch(selectSpell(id))
-    }
+    onSchoolClick: school => {
+      dispatch(toggleSchoolOpen(school))
+    },
+    onSpellClick: spell => {
+      dispatch(selectSpell(spell))
+    },
   }
 }
 

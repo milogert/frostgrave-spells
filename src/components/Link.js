@@ -1,21 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {Button} from '@material-ui/core'
 
 const Link = ({ active, children, onClick }) => {
-  if (active) {
-    return <span>{children}</span>
-  }
-
   return (
-    <a
-      href=""
+    <Button
+      active={active}
+      disabled={active}
       onClick={e => {
         e.preventDefault()
         onClick()
       }}
     >
       {children}
-    </a>
+    </Button>
   )
 }
 
