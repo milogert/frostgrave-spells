@@ -2,6 +2,7 @@ import {
   Schools,
 } from './allSpells'
 
+export const TOGGLE_DRAWER = 'TOGGLE_DRAWER'
 export const SELECT_SPELL = 'SELECT_SPELL'
 export const PREVIOUS_SPELL = 'PREVIOUS_SPELL'
 export const NEXT_SPELL = 'NEXT_SPELL'
@@ -42,10 +43,11 @@ function makeActionCreator(type, ...argNames) {
   }
 }
 
+export const toggleDrawer = makeActionCreator(TOGGLE_DRAWER)
 export const selectSpell = makeActionCreator(SELECT_SPELL, 'spell')
 export const previousSpell = makeActionCreator(PREVIOUS_SPELL)
 export const nextSpell = makeActionCreator(NEXT_SPELL)
-export const toggleStar = makeActionCreator(TOGGLE_STAR, 'id')
+export const toggleStar = makeActionCreator(TOGGLE_STAR, 'school', 'name')
 export const setVisibilityFilter = makeActionCreator(SET_VISIBILITY_FILTER, 'filter')
 export const setSortFilter = makeActionCreator(SET_SORT_FILTER, 'filter')
 export const setSchoolFilter = makeActionCreator(SET_SCHOOL_FILTER, 'school')

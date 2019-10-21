@@ -1,22 +1,23 @@
 import React from 'react'
 import {useStyles} from './drawer/Style'
+import {useTheme} from '@material-ui/core/styles'
 import {
   Drawer,
   Hidden,
 } from '@material-ui/core'
 import Content from './drawer/Content'
 
-const Nav = () => {
+const Nav = ({open, handleDrawerToggle}) => {
   const classes = useStyles()
+  const theme = useTheme()
   return (
     <nav className={classes.drawer} aria-label="mailbox folders">
       {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-      {/*<Hidden smUp implementation="css">
+      <Hidden smUp implementation="css">
         <Drawer
-          container={container}
           variant="temporary"
           anchor={theme.direction === 'rtl' ? 'right' : 'left'}
-          open={mobileOpen}
+          open={open}
           onClose={handleDrawerToggle}
           classes={{
             paper: classes.drawerPaper,
@@ -27,7 +28,7 @@ const Nav = () => {
         >
           <Content/>
         </Drawer>
-      </Hidden>*/}
+      </Hidden>
       <Hidden xsDown implementation="css">
         <Drawer
           classes={{

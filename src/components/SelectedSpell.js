@@ -12,6 +12,7 @@ const SelectedSpell = ({spell}) => {
   return (
     <div>
       <h2>{spell.name}</h2>
+      <h4>{spell.school} / {spell.baseCastingNumber} / {spell.range}</h4>
       <div>{spell.description}</div>
     </div>
   )

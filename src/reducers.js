@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux'
 import {allSpells} from './allSpells'
 import {
+  TOGGLE_DRAWER,
   SET_VISIBILITY_FILTER,
   SET_SCHOOL_FILTER,
   SELECT_SPELL,
@@ -11,6 +12,15 @@ import {
   SchoolFilters,
   SchoolSpunOpen,
 } from './actions'
+
+const drawerOpen = (state = false, action) => {
+  switch (action.type) {
+    case TOGGLE_DRAWER:
+      return !state
+    default:
+      return state
+  }
+}
 
 const visibilityFilter = (state = VisibilityFilters.SHOW_ALL, action) => {
   switch (action.type) {
@@ -58,7 +68,7 @@ const spells = (state = allSpells, action) => {
   switch (action.type) {
     case TOGGLE_STAR:
       return state.map((spell, index) => {
-        if (index === action.id) {
+        if (spell.school === action.school && spell.name === action.name) {
           return Object.assign({}, spell, {starred: !spell.starred})
         }
         return spell
@@ -69,6 +79,7 @@ const spells = (state = allSpells, action) => {
 }
 
 const spellBook = combineReducers({
+  drawerOpen,
   visibilityFilter,
   sortFilter,
   schoolFilter,

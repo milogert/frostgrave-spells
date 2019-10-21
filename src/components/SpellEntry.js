@@ -3,12 +3,13 @@ import PropTypes from 'prop-types'
 import StarLink from '../containers/StarLink'
 import {
   ListItem,
+  ListItemText,
 } from '@material-ui/core'
 
-const SpellEntry = ({onClick, spell, name, description, starred}) => (
-  <ListItem button onClick={onClick}>
+const SpellEntry = ({attrs, onClick, spell, name, description, starred}) => (
+  <ListItem {...attrs} button onClick={onClick}>
+    <ListItemText primary={name} />
     <StarLink spell={spell} starred={starred}>Star</StarLink>
-    {name}
   </ListItem>
 )
 

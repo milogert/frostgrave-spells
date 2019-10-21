@@ -20,7 +20,7 @@ export const Ranges = {
   TOUCH: 'Touch',
 }
 
-export const allSpells = [
+const allSpellsNoId = [
   // Chronomancer.
   {
     name: 'Crumble',
@@ -42,3 +42,6 @@ export const allSpells = [
     starred: false,
   },
 ]
+
+export const allSpells = allSpellsNoId.map((spell, index) => ({...spell, id: index}))
+

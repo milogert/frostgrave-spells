@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { selectSpell, toggleSchoolOpen } from '../actions'
+import { toggleDrawer, selectSpell, toggleSchoolOpen } from '../actions'
 import SpellList from '../components/SpellList'
 import {VisibilityFilters, SchoolFilters} from '../actions'
 
@@ -18,7 +18,7 @@ const getVisibleSpells = (spells, starredFilter, schoolFilter) => {
 
   switch (schoolFilter) {
     case SchoolFilters.ALL:
-      visibleSpells = visibleSpells
+      visibleSpells = visibleSpells.filter(s => true)
       break;
     default:
       visibleSpells = visibleSpells.filter(s => s.school === schoolFilter)
@@ -41,6 +41,7 @@ const mapDispatchToProps = dispatch => {
     },
     onSpellClick: spell => {
       dispatch(selectSpell(spell))
+      dispatch(toggleDrawer())
     },
   }
 }

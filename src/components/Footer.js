@@ -1,25 +1,49 @@
 import React from 'react'
 import FilterLink from '../containers/FilterLink'
-import SchoolFilterLink from '../containers/SchoolFilterLink'
-import { VisibilityFilters, SchoolFilters } from '../actions'
+import { VisibilityFilters} from '../actions'
 import {
+  Container,
+  Grid,
+  FormControl,
+  InputLabel,
   ButtonGroup,
-  Select,
-  NativeSelect,
 } from '@material-ui/core'
 import SchoolSelectFilter from '../containers/SchoolSelectFilter'
 
+export const filterElementList = [
+  <FormControl>
+    <ButtonGroup>
+      <FilterLink filter={VisibilityFilters.SHOW_ALL}>All</FilterLink>
+      <FilterLink filter={VisibilityFilters.SHOW_STARRED}>Starred</FilterLink>
+    </ButtonGroup>
+  </FormControl>,
+  <FormControl>
+    <InputLabel htmlFor="school-native-helper">School</InputLabel>
+    <SchoolSelectFilter />
+  </FormControl>
+]
+
 const Footer = () => {
   return (
-    <div>
-        Star Filter:
-        <ButtonGroup>
-          <FilterLink filter={VisibilityFilters.SHOW_ALL}>All</FilterLink>
-          <FilterLink filter={VisibilityFilters.SHOW_STARRED}>Starred</FilterLink>
-        </ButtonGroup>
-        School Filter:
-        <SchoolSelectFilter />
-    </div>
+    <Container maxWidth={false}>
+    <Grid container spacing={3} direction="column" justify="center" alignItems="flex-start">
+      <Grid item>
+        <FormControl>
+          <ButtonGroup>
+            <FilterLink filter={VisibilityFilters.SHOW_ALL}>All</FilterLink>
+            <FilterLink filter={VisibilityFilters.SHOW_STARRED}>Starred</FilterLink>
+          </ButtonGroup>
+        </FormControl>
+      </Grid>
+
+      <Grid item>
+        <FormControl>
+          <InputLabel htmlFor="school-native-helper">School</InputLabel>
+          <SchoolSelectFilter />
+        </FormControl>
+      </Grid>
+    </Grid>
+  </Container>
   )
 }
 
