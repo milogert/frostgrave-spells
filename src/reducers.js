@@ -5,9 +5,11 @@ import {
   SET_SCHOOL_FILTER,
   SELECT_SPELL,
   TOGGLE_STAR,
+  TOGGLE_SCHOOL_OPEN,
   SortFilters,
   VisibilityFilters,
   SchoolFilters,
+  SchoolSpunOpen,
 } from './actions'
 
 const visibilityFilter = (state = VisibilityFilters.SHOW_ALL, action) => {
@@ -23,10 +25,21 @@ const sortFilter = (state = SortFilters.SORT_ALPHA, action) => {
     return state
 }
 
-const schoolFilter = (state = SchoolFilters.SCHOOL_ALL, action) => {
+const schoolFilter = (state = SchoolFilters.ALL, action) => {
   switch (action.type) {
     case SET_SCHOOL_FILTER:
       return action.school
+    default:
+      return SchoolFilters.ALL
+  }
+}
+
+const schoolOpen = (state = SchoolSpunOpen, action) => {
+  switch (action.type) {
+    case TOGGLE_SCHOOL_OPEN:
+      const toggled = {}
+      toggled[action.school] = !state[action.school]
+      return {...state, ...toggled}
     default:
       return state
   }
@@ -35,7 +48,7 @@ const schoolFilter = (state = SchoolFilters.SCHOOL_ALL, action) => {
 const spell = (state = {}, action) => {
   switch (action.type) {
     case SELECT_SPELL:
-      return allSpells[action.id]
+      return action.spell
     default:
       return state
   }
@@ -61,6 +74,7 @@ const spellBook = combineReducers({
   schoolFilter,
   spell,
   spells,
+  schoolOpen,
 })
     
 export default spellBook

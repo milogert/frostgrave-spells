@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { selectSpell } from '../actions'
+import { selectSpell, toggleSchoolOpen } from '../actions'
 import SpellList from '../components/SpellList'
 import {VisibilityFilters, SchoolFilters} from '../actions'
 
@@ -17,7 +17,7 @@ const getVisibleSpells = (spells, starredFilter, schoolFilter) => {
   }
 
   switch (schoolFilter) {
-    case SchoolFilters.SCHOOL_ALL:
+    case SchoolFilters.ALL:
       visibleSpells = visibleSpells
       break;
     default:
@@ -29,15 +29,19 @@ const getVisibleSpells = (spells, starredFilter, schoolFilter) => {
 
 const mapStateToProps = state => {
   return {
+    schoolOpen: state.schoolOpen,
     spells: getVisibleSpells(state.spells, state.visibilityFilter, state.schoolFilter)
   }
 }
 
 const mapDispatchToProps = dispatch => {
   return {
-    onSpellClick: id => {
-      dispatch(selectSpell(id))
-    }
+    onSchoolClick: school => {
+      dispatch(toggleSchoolOpen(school))
+    },
+    onSpellClick: spell => {
+      dispatch(selectSpell(spell))
+    },
   }
 }
 

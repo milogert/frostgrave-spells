@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {Button} from '@blueprintjs/core'
+import {Button} from '@material-ui/core'
 
 const Link = ({ active, children, onClick }) => {
   return (
