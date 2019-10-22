@@ -1,9 +1,9 @@
 import { connect } from 'react-redux'
 import { toggleDrawer, selectSpell, toggleSchoolOpen } from '../actions'
 import SpellList from '../components/SpellList'
-import {VisibilityFilters, SchoolFilters} from '../actions'
+import {VisibilityFilters, SchoolFilters, RangeFilters} from '../actions'
 
-const getVisibleSpells = (spells, starredFilter, schoolFilter) => {
+const getVisibleSpells = (spells, starredFilter, schoolFilter, rangeFilter, searchFilter) => {
   let visibleSpells;
   switch (starredFilter) {
     case VisibilityFilters.SHOW_ALL:
@@ -24,13 +24,32 @@ const getVisibleSpells = (spells, starredFilter, schoolFilter) => {
       visibleSpells = visibleSpells.filter(s => s.school === schoolFilter)
   }
 
+  switch (rangeFilter) {
+    case RangeFilters.ALL:
+      visibleSpells = visibleSpells.filter(s => true)
+      break;
+    default:
+      visibleSpells = visibleSpells.filter(
+        s => s.range === rangeFilter
+      )
+  }
+
+  const filteredNames = visibleSpells.filter(
+    s => s.name.toLowerCase().includes(searchFilter.toLowerCase())
+  )
+  const filteredDesc = visibleSpells.filter(
+    s => !filteredNames.includes(s) && s.description.toLowerCase().includes(searchFilter.toLowerCase())
+  )
+
+  visibleSpells = filteredNames.concat(filteredDesc)
+
   return visibleSpells
 }
 
 const mapStateToProps = state => {
   return {
     schoolOpen: state.schoolOpen,
-    spells: getVisibleSpells(state.spells, state.visibilityFilter, state.schoolFilter)
+    spells: getVisibleSpells(state.spells, state.visibilityFilter, state.schoolFilter, state.rangeFilter, state.searchFilter)
   }
 }
 

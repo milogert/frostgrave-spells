@@ -1,5 +1,5 @@
 import React from 'react'
-import {useStyles} from './drawer/Style'
+import {useStyles} from './Style'
 import {useTheme} from '@material-ui/core/styles'
 import {
   Drawer,

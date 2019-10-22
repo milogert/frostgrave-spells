@@ -5,13 +5,17 @@ import {
   ListItem,
   ListItemText,
 } from '@material-ui/core'
+import {useStyles} from './Style'
 
-const SpellEntry = ({attrs, onClick, spell, name, description, starred}) => (
-  <ListItem {...attrs} button onClick={onClick}>
-    <ListItemText primary={name} />
-    <StarLink spell={spell} starred={starred}>Star</StarLink>
-  </ListItem>
-)
+const SpellEntry = ({onClick, spell, name, description, starred, selected}) => {
+  const classes = useStyles();
+  return (
+    <ListItem button onClick={onClick} selected={selected}>
+      <ListItemText primary={name} className={classes.nested}/>
+      <StarLink style={{color: 'gold'}} spell={spell} starred={starred}>Star</StarLink>
+    </ListItem>
+  )
+}
 
 SpellEntry.propTypes = {
   onClick: PropTypes.func.isRequired,

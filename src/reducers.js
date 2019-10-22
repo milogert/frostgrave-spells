@@ -4,12 +4,15 @@ import {
   TOGGLE_DRAWER,
   SET_VISIBILITY_FILTER,
   SET_SCHOOL_FILTER,
+  SET_RANGE_FILTER,
+  SET_SEARCH_FILTER,
   SELECT_SPELL,
   TOGGLE_STAR,
   TOGGLE_SCHOOL_OPEN,
   SortFilters,
   VisibilityFilters,
   SchoolFilters,
+  RangeFilters,
   SchoolSpunOpen,
 } from './actions'
 
@@ -40,7 +43,25 @@ const schoolFilter = (state = SchoolFilters.ALL, action) => {
     case SET_SCHOOL_FILTER:
       return action.school
     default:
-      return SchoolFilters.ALL
+      return state
+  }
+}
+
+const rangeFilter = (state = RangeFilters.ALL, action) => {
+  switch (action.type) {
+    case SET_RANGE_FILTER:
+      return action.range
+    default:
+      return state
+  }
+}
+
+const searchFilter = (state = '', action) => {
+  switch (action.type) {
+    case SET_SEARCH_FILTER:
+      return action.term
+    default:
+      return state
   }
 }
 
@@ -83,6 +104,8 @@ const spellBook = combineReducers({
   visibilityFilter,
   sortFilter,
   schoolFilter,
+  rangeFilter,
+  searchFilter,
   spell,
   spells,
   schoolOpen,

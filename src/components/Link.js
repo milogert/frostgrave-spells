@@ -2,10 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {Button} from '@material-ui/core'
 
-const Link = ({ active, children, onClick }) => {
-  return (
+const Link = ({ active, children, onClick }) => (
     <Button
-      active={active}
       disabled={active}
       onClick={e => {
         e.preventDefault()
@@ -15,7 +13,6 @@ const Link = ({ active, children, onClick }) => {
       {children}
     </Button>
   )
-}
 
 Link.propTypes = {
   active: PropTypes.bool.isRequired,

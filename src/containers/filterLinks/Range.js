@@ -1,24 +1,24 @@
 import { connect } from 'react-redux'
-import { setVisibilityFilter } from '../actions'
-import Link from '../components/Link'
+import { setRangeFilter } from '../../actions'
+import Link from '../../components/Link'
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    active: ownProps.filter === state.visibilityFilter
+    active: ownProps.filter === state.rangeFilter
   }
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onClick: () => {
-      dispatch(setVisibilityFilter(ownProps.filter))
+      dispatch(setRangeFilter(ownProps.filter))
     }
   }
 }
 
-const FilterLink = connect(
+const RangeFilterLink = connect(
   mapStateToProps,
   mapDispatchToProps
 )(Link)
 
-export default FilterLink
+export default RangeFilterLink

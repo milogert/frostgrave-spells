@@ -6,10 +6,12 @@ import {
   IconButton,
 } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
-import {useStyles} from './drawer/Style'
+import {useStyles} from './Style'
+import {useTheme} from '@material-ui/core/styles'
 
 const Bar = ({toggleDrawer}) => {
   const classes = useStyles()
+  const theme = useTheme()
   return (
     <AppBar position="fixed" className={classes.appBar}>
       <Toolbar>

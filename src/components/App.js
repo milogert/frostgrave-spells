@@ -1,7 +1,7 @@
 import React from 'react'
 import SelectedSpellDisplay from '../containers/SelectedSpellDisplay'
 import ResponsiveNav from '../containers/ResponsiveNav'
-import {useStyles} from './drawer/Style'
+import {useStyles} from './Style'
 import {
   CssBaseline,
 } from '@material-ui/core';
@@ -22,4 +22,4 @@ const App = () => {
   )
 }
 
-export default App;
+export default App

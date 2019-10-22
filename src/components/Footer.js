@@ -1,9 +1,12 @@
 import React from 'react'
-import FilterLink from '../containers/FilterLink'
-import { VisibilityFilters} from '../actions'
+import VisibilityFilterLink from '../containers/filterLinks/Visibility'
+import RangeFilterLink from '../containers/filterLinks/Range'
 import {
-  Container,
-  Grid,
+  VisibilityFilters,
+  RangeFilters,
+} from '../actions'
+import {
+  Button,
   FormControl,
   InputLabel,
   ButtonGroup,
@@ -11,40 +14,22 @@ import {
 import SchoolSelectFilter from '../containers/SchoolSelectFilter'
 
 export const filterElementList = [
-  <FormControl>
-    <ButtonGroup>
-      <FilterLink filter={VisibilityFilters.SHOW_ALL}>All</FilterLink>
-      <FilterLink filter={VisibilityFilters.SHOW_STARRED}>Starred</FilterLink>
-    </ButtonGroup>
-  </FormControl>,
+  <ButtonGroup size="small" aria-label="small outlined button group">
+    <VisibilityFilterLink filter={VisibilityFilters.SHOW_ALL}>All</VisibilityFilterLink>
+    <VisibilityFilterLink filter={VisibilityFilters.SHOW_STARRED}>Starred</VisibilityFilterLink>
+  </ButtonGroup>,
+  <ButtonGroup size="small">
+    {Object.keys(RangeFilters).map((range, index) =>
+      <RangeFilterLink key={range} filter={RangeFilters[range]}>{RangeFilters[range]}</RangeFilterLink>
+    )}}
+  </ButtonGroup>,
+  <ButtonGroup size="small" aria-label="small outlined button group">
+              <Button>One</Button>
+              <Button>Two</Button>
+              <Button>Three</Button>
+            </ButtonGroup>,
   <FormControl>
     <InputLabel htmlFor="school-native-helper">School</InputLabel>
     <SchoolSelectFilter />
   </FormControl>
 ]
-
-const Footer = () => {
-  return (
-    <Container maxWidth={false}>
-    <Grid container spacing={3} direction="column" justify="center" alignItems="flex-start">
-      <Grid item>
-        <FormControl>
-          <ButtonGroup>
-            <FilterLink filter={VisibilityFilters.SHOW_ALL}>All</FilterLink>
-            <FilterLink filter={VisibilityFilters.SHOW_STARRED}>Starred</FilterLink>
-          </ButtonGroup>
-        </FormControl>
-      </Grid>
-
-      <Grid item>
-        <FormControl>
-          <InputLabel htmlFor="school-native-helper">School</InputLabel>
-          <SchoolSelectFilter />
-        </FormControl>
-      </Grid>
-    </Grid>
-  </Container>
-  )
-}
-
-export default Footer

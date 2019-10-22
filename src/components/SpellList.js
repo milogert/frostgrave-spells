@@ -4,6 +4,7 @@ import SpellEntry from './SpellEntry'
 import {
   List,
   ListItem,
+  ListSubheader,
   ListItemText,
   Collapse,
 } from '@material-ui/core'
@@ -12,11 +13,12 @@ import {
   ExpandMore,
 } from '@material-ui/icons'
 import {SchoolFilters} from '../actions'
-import {useStyles} from './drawer/Style'
+import {schoolIcon} from '../icons/Schools'
+import {useStyles} from './Style'
 
 const SpellList = ({ schoolOpen, spells, onSchoolClick, onSpellClick }) => {
-  const classes = useStyles();
   const spellEntryItems = {}
+  const classes = useStyles()
 
   Object.keys(SchoolFilters).forEach((school) => {
     const name = SchoolFilters[school]
@@ -36,28 +38,30 @@ const SpellList = ({ schoolOpen, spells, onSchoolClick, onSpellClick }) => {
   }
 
   return (
-    <List>
+    <List
+      component="nav"
+      aria-labelledby="spell-list-label"
+    >
       {Object.keys(spellEntryItems).map(school => (
-        
-        <div>
+        <div key={school}>
           <ListItem button school={school} onClick={() => onSchoolClick(school)}>
+            {schoolIcon(school)}
             <ListItemText primary={school} />
             {schoolOpen[school] ? <ExpandLess /> : <ExpandMore />}
           </ListItem>
-        <Collapse key={school} in={schoolOpen[school]}>
-          <List disablePadding>
-            {spellEntryItems[school].map((spell, index) => (
-              <SpellEntry
-                attrs={{className: classes.nested}}
-                key={school + '_' + spell.name}
-                spell={spell}
-                {...spell}
-                onClick={() => onSpellClick(spell)}
-              />
-            ))}
-          </List>
-        </Collapse>
-          </div>
+          <Collapse key={school} in={schoolOpen[school]}>
+            <List disablePadding>
+              {spellEntryItems[school].map((spell, index) => (
+                <SpellEntry
+                  key={school + '_' + spell.name}
+                  spell={spell}
+                  {...spell}
+                  onClick={() => onSpellClick(spell)}
+                />
+              ))}
+            </List>
+          </Collapse>
+        </div>
       ))}
     </List>
   )
