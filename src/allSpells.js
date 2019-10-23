@@ -1,23 +1,21 @@
-export const SCHOOL_ENCHANT = 'SCHOOL_ENCHANT'
-export const SCHOOL_EVOKE = 'SCHOOL_EVOKE'
 export const Schools = {
-  CHRONOMANCER: 'Chronomancer',
-  ELEMENTALIST: 'Elementalist',
-  ENCHANTER: 'Enchanter',
-  ILLUSIONIST: 'Illusionist',
-  NECROMANCER: 'Necromancer',
-  SIGILIST: 'Sigilist',
-  SOOTHSAYER: 'Soothsayer',
-  SUMMONER: 'Summoner',
-  THAUMATURGE: 'Thaumaturge',
-  WITCH: 'Witch',
+  CHRONOMANCER: 'CHRONOMANCER',
+  ELEMENTALIST: 'ELEMENTALIST',
+  ENCHANTER: 'ENCHANTER',
+  ILLUSIONIST: 'ILLUSIONIST',
+  NECROMANCER: 'NECROMANCER',
+  SIGILIST: 'SIGILIST',
+  SOOTHSAYER: 'SOOTHSAYER',
+  SUMMONER: 'SUMMONER',
+  THAUMATURGE: 'THAUMATURGE',
+  WITCH: 'WITCH',
 }
 
 export const Ranges = {
-  SELF: 'Self Only',
-  LOS: 'Line of Sight',
-  AREA: 'Area Effect',
-  TOUCH: 'Touch',
+  SELF: "SELF",
+  LOS: 'LOS',
+  AREA: 'AREA',
+  TOUCH: 'TOUCH',
 }
 
 const allSpellsNoId = [

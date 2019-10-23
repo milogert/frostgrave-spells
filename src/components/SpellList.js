@@ -1,10 +1,10 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import PropTypes from 'prop-types'
 import SpellEntry from './SpellEntry'
 import {
   List,
   ListItem,
-  ListSubheader,
   ListItemText,
   Collapse,
 } from '@material-ui/core'
@@ -14,11 +14,10 @@ import {
 } from '@material-ui/icons'
 import {SchoolFilters} from '../actions'
 import {schoolIcon} from '../icons/Schools'
-import {useStyles} from './Style'
 
 const SpellList = ({ schoolOpen, spells, onSchoolClick, onSpellClick }) => {
   const spellEntryItems = {}
-  const classes = useStyles()
+	const { t} = useTranslation()
 
   Object.keys(SchoolFilters).forEach((school) => {
     const name = SchoolFilters[school]
@@ -46,7 +45,7 @@ const SpellList = ({ schoolOpen, spells, onSchoolClick, onSpellClick }) => {
         <div key={school}>
           <ListItem button school={school} onClick={() => onSchoolClick(school)}>
             {schoolIcon(school)}
-            <ListItemText primary={school} />
+            <ListItemText primary={t(school)} />
             {schoolOpen[school] ? <ExpandLess /> : <ExpandMore />}
           </ListItem>
           <Collapse key={school} in={schoolOpen[school]}>

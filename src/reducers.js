@@ -5,6 +5,7 @@ import {
   OPEN_DRAWER,
   TOGGLE_DRAWER,
   SET_VISIBILITY_FILTER,
+  FILTER_STARRED,
   SET_SCHOOL_FILTER,
   SET_RANGE_FILTER,
   SET_SEARCH_FILTER,
@@ -34,6 +35,15 @@ const drawerOpen = (state = false, action) => {
 const visibilityFilter = (state = VisibilityFilters.SHOW_ALL, action) => {
   switch (action.type) {
     case SET_VISIBILITY_FILTER:
+      return action.filter
+    default:
+      return state
+  }
+}
+
+const filterStarred = (state = false, action) => {
+  switch (action.type) {
+    case FILTER_STARRED:
       return action.filter
     default:
       return state
@@ -108,6 +118,7 @@ const spells = (state = allSpells, action) => {
 const spellBook = combineReducers({
   drawerOpen,
   visibilityFilter,
+  filterStarred,
   sortFilter,
   schoolFilter,
   rangeFilter,

@@ -1,18 +1,29 @@
 import React from 'react'
+import { makeStyles} from '@material-ui/core/styles';
+import { useTranslation } from 'react-i18next'
 import PropTypes from 'prop-types'
 import StarLink from '../containers/StarLink'
 import {
   ListItem,
   ListItemText,
 } from '@material-ui/core'
-import {useStyles} from './Style'
+
+const useStyles = makeStyles(theme => ({
+  nested: {
+    paddingLeft: theme.spacing(4),
+  },
+  goldStar: {
+    color: 'gold',
+  },
+}))
 
 const SpellEntry = ({onClick, spell, name, description, starred, selected}) => {
   const classes = useStyles();
+	const { t } = useTranslation()
   return (
     <ListItem button onClick={onClick} selected={selected}>
-      <ListItemText primary={name} className={classes.nested}/>
-      <StarLink style={{color: 'gold'}} spell={spell} starred={starred}>Star</StarLink>
+      <ListItemText primary={t(name)} className={classes.nested}/>
+      <StarLink attrs={{className: classes.goldStar}} spell={spell} starred={starred}>Star</StarLink>
     </ListItem>
   )
 }

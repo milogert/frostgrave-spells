@@ -11,9 +11,8 @@ const Nav = ({open, handleDrawerToggle}) => {
   const classes = useStyles()
   const theme = useTheme()
   return (
-    <nav className={classes.drawer} aria-label="mailbox folders">
-      {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-      <Hidden smUp implementation="css">
+    <nav className={classes.drawer} aria-label="spell list">
+      <Hidden smUp>
         <Drawer
           variant="temporary"
           anchor={theme.direction === 'rtl' ? 'right' : 'left'}
@@ -29,7 +28,7 @@ const Nav = ({open, handleDrawerToggle}) => {
           <Content/>
         </Drawer>
       </Hidden>
-      <Hidden xsDown implementation="css">
+      <Hidden xsDown>
         <Drawer
           classes={{
             paper: classes.drawerPaper,

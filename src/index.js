@@ -2,11 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
-import { createStore } from 'redux'
 import {Provider} from 'react-redux'
-import spellBook from './reducers'
-
-const store = createStore(spellBook)
+import store from './store'
+import './i18n'
 
 ReactDOM.render(
   <Provider store={store}>

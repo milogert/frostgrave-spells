@@ -1,5 +1,5 @@
 import {connect} from 'react-redux'
-import { setSearchFilter } from '../actions'
+import { setSearchFilter, resetFilters } from '../actions'
 import FilterBar from '../components/drawer/FilterBar.js'
 
 const mapStateToProps = (state, ownProps) => {
@@ -15,6 +15,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
       dispatch(setSearchFilter(e.currentTarget.value))
     },
     clearSearch: () => dispatch(setSearchFilter('')),
+    resetFilters: () => resetFilters(dispatch)
   }
 }
 

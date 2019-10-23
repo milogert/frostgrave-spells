@@ -1,6 +1,8 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const SelectedSpell = ({spell}) => {
+	const { t, i18n } = useTranslation()
   if (Object.keys(spell).length === 0) {
     return (
       <div>
@@ -12,7 +14,7 @@ const SelectedSpell = ({spell}) => {
   return (
     <div>
       <h2>{spell.name}</h2>
-      <h4>{spell.school} / {spell.baseCastingNumber} / {spell.range}</h4>
+      <h4>{t(spell.school)} / {spell.baseCastingNumber} / {t(spell.range)}</h4>
       <div>{spell.description}</div>
     </div>
   )

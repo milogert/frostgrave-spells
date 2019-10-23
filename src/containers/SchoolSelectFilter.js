@@ -7,6 +7,7 @@ import SelectFilter from '../components/SelectFilter'
 
 const mapStateToProps = (state, ownProps) => {
   return {
+    value: state.schoolFilter,
     optionMap: SchoolFilters,
   }
 }
@@ -14,7 +15,7 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onChange: (e) => {
-      dispatch(setSchoolFilter(SchoolFilters[e.currentTarget.value]))
+      dispatch(setSchoolFilter(e.target.value))
     },
   }
 }

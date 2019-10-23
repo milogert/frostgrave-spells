@@ -6,11 +6,13 @@ import {
   CssBaseline,
 } from '@material-ui/core';
 import ResponsiveBar from '../containers/ResponsiveBar'
+import { useTranslation } from 'react-i18next';
 
 const App = () => {
-  const classes = useStyles()
-  return (
-    <div className={classes.root}>
+	const classes = useStyles()
+	const { t, i18n } = useTranslation()
+	return (
+		<div className={classes.root}>
       <CssBaseline />
       <ResponsiveBar />
       <ResponsiveNav />

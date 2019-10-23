@@ -10,7 +10,9 @@ export const SELECT_SPELL = 'SELECT_SPELL'
 export const PREVIOUS_SPELL = 'PREVIOUS_SPELL'
 export const NEXT_SPELL = 'NEXT_SPELL'
 export const TOGGLE_STAR = 'TOGGLE_STAR'
+export const RESET_FILTERS = 'RESET_FILTERS'
 export const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER'
+export const FILTER_STARRED = 'FILTER_STARRED'
 export const SET_SORT_FILTER = 'SET_SORT_FILTER'
 export const SET_SCHOOL_FILTER = 'SET_SCHOOL_FILTER'
 export const SET_RANGE_FILTER = 'SET_RANGE_FILTER'
@@ -27,12 +29,12 @@ export const SortFilters = {
 }
 
 export const SchoolFilters = {
-  ALL: 'All',
+  ALL: 'ALL',
   ...Schools
 }
 
 export const RangeFilters = {
-  ALL: 'All',
+  ALL: 'ALL',
   ...Ranges,
 }
 
@@ -61,8 +63,16 @@ export const previousSpell = makeActionCreator(PREVIOUS_SPELL)
 export const nextSpell = makeActionCreator(NEXT_SPELL)
 export const toggleStar = makeActionCreator(TOGGLE_STAR, 'school', 'name')
 export const setVisibilityFilter = makeActionCreator(SET_VISIBILITY_FILTER, 'filter')
+export const filterStarred = makeActionCreator(FILTER_STARRED, 'filter')
 export const setSortFilter = makeActionCreator(SET_SORT_FILTER, 'filter')
 export const setSchoolFilter = makeActionCreator(SET_SCHOOL_FILTER, 'school')
 export const setRangeFilter = makeActionCreator(SET_RANGE_FILTER, 'range')
 export const setSearchFilter = makeActionCreator(SET_SEARCH_FILTER, 'term')
+export const resetFilters = (dispatch) => {
+  dispatch(setVisibilityFilter(VisibilityFilters.SHOW_ALL))
+  dispatch(filterStarred(false))
+  dispatch(setRangeFilter(RangeFilters.ALL))
+  dispatch(setSchoolFilter(SchoolFilters.ALL))
+  dispatch(setSearchFilter(''))
+}
 export const toggleSchoolOpen = makeActionCreator(TOGGLE_SCHOOL_OPEN, 'school')

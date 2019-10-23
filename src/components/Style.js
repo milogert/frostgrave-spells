@@ -35,9 +35,6 @@ export const useStyles = makeStyles(theme => ({
     paddingTop: "1rem",
     paddingBottom: "1rem",
   },
-  nested: {
-    paddingLeft: theme.spacing(4)
-  },
   icon: {
     height: "1em",
     width: "1em",

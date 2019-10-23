@@ -4,16 +4,9 @@ import SpellList from '../components/SpellList'
 import {VisibilityFilters, SchoolFilters, RangeFilters} from '../actions'
 
 const getVisibleSpells = (spells, starredFilter, schoolFilter, rangeFilter, searchFilter) => {
-  let visibleSpells;
-  switch (starredFilter) {
-    case VisibilityFilters.SHOW_ALL:
-      visibleSpells = spells
-      break;
-    case VisibilityFilters.SHOW_STARRED:
-      visibleSpells = spells.filter(s => s.starred)
-      break;
-    default:
-      visibleSpells = spells
+  let visibleSpells = spells
+  if (starredFilter) {
+    visibleSpells = visibleSpells.filter(s => s.starred)
   }
 
   switch (schoolFilter) {
@@ -49,7 +42,7 @@ const getVisibleSpells = (spells, starredFilter, schoolFilter, rangeFilter, sear
 const mapStateToProps = state => {
   return {
     schoolOpen: state.schoolOpen,
-    spells: getVisibleSpells(state.spells, state.visibilityFilter, state.schoolFilter, state.rangeFilter, state.searchFilter)
+    spells: getVisibleSpells(state.spells, state.filterStarred, state.schoolFilter, state.rangeFilter, state.searchFilter)
   }
 }
 

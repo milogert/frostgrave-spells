@@ -1,5 +1,4 @@
 import React from 'react'
-//import {useStyles} from './Style'
 import {
   IconButton,
   InputBase,
@@ -35,7 +34,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
-const FilterBar = ({onChange, searchValue, clearSearch}) => {
+const FilterBar = ({onChange, searchValue, clearSearch, resetFilters}) => {
   const classes = useStyles()
   const [anchorEl, setAnchorEl] = React.useState(null)
 
@@ -84,8 +83,9 @@ const FilterBar = ({onChange, searchValue, clearSearch}) => {
         onClose={handleClose}
       >
         {filterElementList.map((f, index) => {
-          return (<MenuItem key={index}>{f}</MenuItem>)
+          return <MenuItem key={index}>{f}</MenuItem>
         })}
+        <MenuItem onClick={resetFilters}>Reset Filters</MenuItem>
       </Menu>
     </div>
   )
