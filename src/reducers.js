@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux'
 import {allSpells} from './allSpells'
 import {
+  CLOSE_DRAWER,
+  OPEN_DRAWER,
   TOGGLE_DRAWER,
   SET_VISIBILITY_FILTER,
   SET_SCHOOL_FILTER,
@@ -18,6 +20,10 @@ import {
 
 const drawerOpen = (state = false, action) => {
   switch (action.type) {
+    case CLOSE_DRAWER:
+      return false
+    case OPEN_DRAWER:
+      return true
     case TOGGLE_DRAWER:
       return !state
     default:

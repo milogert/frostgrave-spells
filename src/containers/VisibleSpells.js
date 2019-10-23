@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { toggleDrawer, selectSpell, toggleSchoolOpen } from '../actions'
+import { closeDrawer, selectSpell, toggleSchoolOpen } from '../actions'
 import SpellList from '../components/SpellList'
 import {VisibilityFilters, SchoolFilters, RangeFilters} from '../actions'
 
@@ -60,7 +60,7 @@ const mapDispatchToProps = dispatch => {
     },
     onSpellClick: spell => {
       dispatch(selectSpell(spell))
-      dispatch(toggleDrawer())
+      dispatch(closeDrawer())
     },
   }
 }

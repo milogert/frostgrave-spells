@@ -3,6 +3,8 @@ import {
   Ranges,
 } from './allSpells'
 
+export const CLOSE_DRAWER = 'CLOSE_DRAWER'
+export const OPEN_DRAWER = 'OPEN_DRAWER'
 export const TOGGLE_DRAWER = 'TOGGLE_DRAWER'
 export const SELECT_SPELL = 'SELECT_SPELL'
 export const PREVIOUS_SPELL = 'PREVIOUS_SPELL'
@@ -51,6 +53,8 @@ function makeActionCreator(type, ...argNames) {
   }
 }
 
+export const closeDrawer = makeActionCreator(CLOSE_DRAWER)
+export const openDrawer = makeActionCreator(OPEN_DRAWER)
 export const toggleDrawer = makeActionCreator(TOGGLE_DRAWER)
 export const selectSpell = makeActionCreator(SELECT_SPELL, 'spell')
 export const previousSpell = makeActionCreator(PREVIOUS_SPELL)
