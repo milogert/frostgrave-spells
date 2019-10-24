@@ -1,27 +1,27 @@
-import {connect} from 'react-redux'
-import { setSearchFilter, resetFilters } from '../actions'
-import FilterBar from '../components/drawer/FilterBar.js'
+import { connect } from "react-redux";
+import { setSearchFilter, resetFilters } from "../actions";
+import FilterBar from "../components/drawer/FilterBar.js";
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    searchValue: state.searchFilter,
-  }
-}
+    searchValue: state.searchFilter
+  };
+};
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    onChange: (e) => {
-      console.log(e.currentTarget.value)
-      dispatch(setSearchFilter(e.currentTarget.value))
+    onChange: e => {
+      console.log(e.currentTarget.value);
+      dispatch(setSearchFilter(e.currentTarget.value));
     },
-    clearSearch: () => dispatch(setSearchFilter('')),
+    clearSearch: () => dispatch(setSearchFilter("")),
     resetFilters: () => resetFilters(dispatch)
-  }
-}
+  };
+};
 
 const FilterBarCont = connect(
   mapStateToProps,
-  mapDispatchToProps,
-)(FilterBar)
+  mapDispatchToProps
+)(FilterBar);
 
-export default FilterBarCont
+export default FilterBarCont;

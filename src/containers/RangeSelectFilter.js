@@ -1,25 +1,25 @@
 import { connect } from "react-redux";
-import { setSchoolFilter, SchoolFilters } from "../actions";
+import { setRangeFilter, RangeFilters } from "../actions";
 import SelectFilter from "../components/SelectFilter";
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    value: state.schoolFilter,
-    optionMap: SchoolFilters
+    value: state.rangeFilter,
+    optionMap: RangeFilters
   };
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onChange: e => {
-      dispatch(setSchoolFilter(e.target.value));
+      dispatch(setRangeFilter(e.target.value));
     }
   };
 };
 
-const SchoolSelectFilter = connect(
+const RangeSelectFilter = connect(
   mapStateToProps,
   mapDispatchToProps
 )(SelectFilter);
 
-export default SchoolSelectFilter;
+export default RangeSelectFilter;

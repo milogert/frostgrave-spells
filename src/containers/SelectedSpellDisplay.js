@@ -1,19 +1,19 @@
-import { connect} from 'react-redux'
-import SelectedSpell from '../components/SelectedSpell'
+import { connect } from "react-redux";
+import SelectedSpell from "../components/SelectedSpell";
 
 const mapStateToProps = state => {
   return {
-    spell: state.spell,
-  }
-}
+    spell: state.spell
+  };
+};
 
 const mapDispatchToProps = dispatch => {
-  return {}
-}
+  return {};
+};
 
 const SelectedSpellDisplay = connect(
   mapStateToProps,
-  mapDispatchToProps,
-)(SelectedSpell)
+  mapDispatchToProps
+)(SelectedSpell);
 
-export default SelectedSpellDisplay
+export default SelectedSpellDisplay;

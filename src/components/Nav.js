@@ -1,46 +1,43 @@
-import React from 'react'
-import {useStyles} from './Style'
-import {useTheme} from '@material-ui/core/styles'
-import {
-  Drawer,
-  Hidden,
-} from '@material-ui/core'
-import Content from './drawer/Content'
+import React from "react";
+import { useStyles } from "./Style";
+import { useTheme } from "@material-ui/core/styles";
+import { Drawer, Hidden } from "@material-ui/core";
+import Content from "./drawer/Content";
 
-const Nav = ({open, handleDrawerToggle}) => {
-  const classes = useStyles()
-  const theme = useTheme()
+const Nav = ({ open, handleDrawerToggle }) => {
+  const classes = useStyles();
+  const theme = useTheme();
   return (
     <nav className={classes.drawer} aria-label="spell list">
       <Hidden smUp>
         <Drawer
           variant="temporary"
-          anchor={theme.direction === 'rtl' ? 'right' : 'left'}
+          anchor={theme.direction === "rtl" ? "right" : "left"}
           open={open}
           onClose={handleDrawerToggle}
           classes={{
-            paper: classes.drawerPaper,
+            paper: classes.drawerPaper
           }}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true // Better open performance on mobile.
           }}
         >
-          <Content/>
+          <Content />
         </Drawer>
       </Hidden>
       <Hidden xsDown>
         <Drawer
           classes={{
-            paper: classes.drawerPaper,
+            paper: classes.drawerPaper
           }}
           variant="permanent"
           open
         >
-          <Content/>
+          <Content />
         </Drawer>
       </Hidden>
     </nav>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;

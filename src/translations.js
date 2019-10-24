@@ -1,32 +1,33 @@
 const resources = {
   en: {
     translation: {
-      "ALL": 'All',
+      ALL: "All",
 
-			// Schools.
-			"CHRONOMANCER": 'Chronomancer',
-			"ELEMENTALIST": 'Elementalist',
-			"ENCHANTER": 'Enchanter',
-			"ILLUSIONIST": 'Illusionist',
-			"NECROMANCER": 'Necromancer',
-			"SIGILIST": 'Sigilist',
-			"SOOTHSAYER": 'Soothsayer',
-			"SUMMONER": 'Summoner',
-			"THAUMATURGE": 'Thaumaturge',
-			"WITCH": 'Witch',
+      // Schools.
+      CHRONOMANCER: "Chronomancer",
+      ELEMENTALIST: "Elementalist",
+      ENCHANTER: "Enchanter",
+      ILLUSIONIST: "Illusionist",
+      NECROMANCER: "Necromancer",
+      SIGILIST: "Sigilist",
+      SOOTHSAYER: "Soothsayer",
+      SUMMONER: "Summoner",
+      THAUMATURGE: "Thaumaturge",
+      WITCH: "Witch",
 
-			// Ranges.
-			"SELF": "Self Only",
-			"LOS": "Line of Sight",
-			"AREA": "Area Effect",
-			"TOUCH": "Touch",
-      "OUTOFGAME": "Out of Game",
+      // Ranges.
+      SELF: "Self Only",
+      LOS: "Line of Sight",
+      AREA: "Area Effect",
+      TOUCH: "Touch",
+      OUTOFGAME: "Out of Game",
 
       // Other.
-      "filterStarred": "Filter by Starred",
-      "filterSchool": "Filter by School",
+      filterStarred: "Filter by Starred",
+      filterRange: "Filter by Range",
+      filterSchool: "Filter by School"
     }
   }
 };
 
-export default resources
+export default resources;
