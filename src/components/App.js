@@ -6,7 +6,6 @@ import {
   CssBaseline,
 } from '@material-ui/core';
 import ResponsiveBar from '../containers/ResponsiveBar'
-import { useTranslation } from 'react-i18next';
 
 const App = () => {
 	const classes = useStyles()
