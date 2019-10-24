@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4dead70ed8afe621db48e4a9a39ccb76",
+    "revision": "3cd32fb6615c5c62864ffc178b911ca0",
     "url": "/frostgrave-spells/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/frostgrave-spells/static/js/2.10153363.chunk.js"
   },
   {
-    "revision": "26a703b3bea57e6b6cba",
-    "url": "/frostgrave-spells/static/js/main.b64a0835.chunk.js"
+    "revision": "6627c98e5442510dc430",
+    "url": "/frostgrave-spells/static/js/main.e395664a.chunk.js"
   },
   {
     "revision": "be26df6897a334f2477d",
