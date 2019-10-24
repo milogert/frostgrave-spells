@@ -10,7 +10,6 @@ import { useTranslation } from 'react-i18next';
 
 const App = () => {
 	const classes = useStyles()
-	const { t, i18n } = useTranslation()
 	return (
 		<div className={classes.root}>
       <CssBaseline />

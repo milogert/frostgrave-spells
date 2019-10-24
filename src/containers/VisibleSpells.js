@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import { closeDrawer, selectSpell, toggleSchoolOpen } from '../actions'
 import SpellList from '../components/SpellList'
-import {VisibilityFilters, SchoolFilters, RangeFilters} from '../actions'
+import {SchoolFilters, RangeFilters} from '../actions'
 
 const getVisibleSpells = (spells, starredFilter, schoolFilter, rangeFilter, searchFilter) => {
   let visibleSpells = spells

@@ -2,7 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 
 const SelectedSpell = ({spell}) => {
-	const { t, i18n } = useTranslation()
+	const { t} = useTranslation()
   if (Object.keys(spell).length === 0) {
     return (
       <div>
