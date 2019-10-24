@@ -21,7 +21,7 @@ const SpellEntry = ({ onClick, spell, selected }) => {
     <ListItem button onClick={onClick} selected={selected}>
       <ListItemText primary={t(spell.name)} className={classes.nested} />
       <StarLink
-        attrs={{ className: classes.goldStar }}
+        attrs={{ className: spell.starred ? classes.goldStar : "" }}
         name={spell.name}
         school={spell.school}
         starred={spell.starred}

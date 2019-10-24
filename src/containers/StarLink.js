@@ -14,7 +14,7 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onClick: () => {
-      dispatch(toggleStar(ownProps.spell.school, ownProps.spell.name));
+      dispatch(toggleStar(ownProps.school, ownProps.name));
     }
   };
 };
