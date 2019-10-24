@@ -20,6 +20,7 @@ const resources = {
 			"LOS": "Line of Sight",
 			"AREA": "Area Effect",
 			"TOUCH": "Touch",
+      "OUTOFGAME": "Out of Game",
 
       // Other.
       "filterStarred": "Filter by Starred",
