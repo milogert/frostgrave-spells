@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/frostgrave-spells/static/js/main.7c291938.chunk.js",
-    "main.js.map": "/frostgrave-spells/static/js/main.7c291938.chunk.js.map",
+    "main.js": "/frostgrave-spells/static/js/main.7e641d03.chunk.js",
+    "main.js.map": "/frostgrave-spells/static/js/main.7e641d03.chunk.js.map",
     "runtime-main.js": "/frostgrave-spells/static/js/runtime-main.6aacfd40.js",
     "runtime-main.js.map": "/frostgrave-spells/static/js/runtime-main.6aacfd40.js.map",
-    "static/js/2.60e7c31f.chunk.js": "/frostgrave-spells/static/js/2.60e7c31f.chunk.js",
-    "static/js/2.60e7c31f.chunk.js.map": "/frostgrave-spells/static/js/2.60e7c31f.chunk.js.map",
+    "static/js/2.230569bb.chunk.js": "/frostgrave-spells/static/js/2.230569bb.chunk.js",
+    "static/js/2.230569bb.chunk.js.map": "/frostgrave-spells/static/js/2.230569bb.chunk.js.map",
     "index.html": "/frostgrave-spells/index.html",
-    "precache-manifest.33b58ce938b405a088e343dc6ba55d29.js": "/frostgrave-spells/precache-manifest.33b58ce938b405a088e343dc6ba55d29.js",
+    "precache-manifest.fe3b4e3ce705b6e478853ac42dd6981d.js": "/frostgrave-spells/precache-manifest.fe3b4e3ce705b6e478853ac42dd6981d.js",
     "service-worker.js": "/frostgrave-spells/service-worker.js"
   },
   "entrypoints": [
     "static/js/runtime-main.6aacfd40.js",
-    "static/js/2.60e7c31f.chunk.js",
-    "static/js/main.7c291938.chunk.js"
+    "static/js/2.230569bb.chunk.js",
+    "static/js/main.7e641d03.chunk.js"
   ]
 }
