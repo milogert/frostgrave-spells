@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2ab674eed1721d655fd85fea4692a14a",
+    "revision": "d9759cc1268fad57f0f4631ed27b5478",
     "url": "/frostgrave-spells/index.html"
   },
   {
