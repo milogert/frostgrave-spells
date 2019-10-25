@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/frostgrave-spells/precache-manifest.c71ec1e9d1ed900d961e0f1438f2f30e.js"
+  "/frostgrave-spells/precache-manifest.306c2108f8ae5d717495cd453868e9b3.js"
 );
 
 self.addEventListener('message', (event) => {
