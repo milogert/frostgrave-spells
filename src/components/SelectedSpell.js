@@ -16,7 +16,7 @@ const SelectedSpell = ({ spell }) => {
   if (Object.keys(spell).length === 0) {
     return (
       <div>
-        <h2>Select a spell from the left.</h2>
+        <h2>Select a spell from the menu.</h2>
       </div>
     );
   }
@@ -25,7 +25,7 @@ const SelectedSpell = ({ spell }) => {
     <div>
       <h2>{spell.name}</h2>
       <h4>
-        {t(spell.school)} / {spell.baseCastingNumber} / {t(spell.range)}
+        {t(spell.school)} / {spell.baseCastingNumber} / {spell.range.map(t).join(", ")}
       </h4>
       <div className={classes.p}>{tipFilter(spell.description)}</div>
     </div>

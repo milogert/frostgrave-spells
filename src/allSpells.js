@@ -300,345 +300,345 @@ const allSpellsNoId = [
   },
   // Necromancer.
   {
-    name: "test",
+    name: "Bone Dart",
     school: Schools.NECROMANCER,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 8,
+    range: [Ranges.LOS],
+    description: ""
   },
   {
-    name: "test",
+    name: "Bones of the Earth",
     school: Schools.NECROMANCER,
     baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    range: [Ranges.LOS],
+    description: ""
   },
   {
-    name: "test",
+    name: "Control Undead",
     school: Schools.NECROMANCER,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 12,
+    range: [Ranges.LOS],
+    description: ""
   },
   {
-    name: "test",
+    name: "Raise Zombie",
     school: Schools.NECROMANCER,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 8,
+    range: [Ranges.OUTOFGAME, Ranges.TOUCH],
+    description: ""
   },
   {
-    name: "test",
+    name: "Reveal Death",
     school: Schools.NECROMANCER,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 12,
+    range: [Ranges.LOS],
+    description: ""
   },
   {
-    name: "test",
+    name: "Spell Eater",
     school: Schools.NECROMANCER,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 12,
+    range: [Ranges.LOS],
+    description: ""
   },
   {
-    name: "test",
+    name: "Steal Health",
     school: Schools.NECROMANCER,
     baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    range: [Ranges.LOS],
+    description: ""
   },
   {
-    name: "test",
+    name: "Strike Dead",
     school: Schools.NECROMANCER,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 18,
+    range: [Ranges.LOS],
+    description: ""
   },
   // Sigilist.
   {
-    name: "test",
+    name: "Absorb Knowledge",
     school: Schools.SIGILIST,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 8,
+    range: [Ranges.OUTOFGAME],
+    description: ""
   },
   {
-    name: "test",
+    name: "Create Grimoire",
     school: Schools.SIGILIST,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 12,
+    range: [Ranges.OUTOFGAME],
+    description: ""
   },
   {
-    name: "test",
+    name: "Draining Word",
     school: Schools.SIGILIST,
-    baseCastingNumber: 10,
+    baseCastingNumber: 14,
     range: [Ranges.AREA],
-    description: "Test spell"
+    description: ""
   },
   {
-    name: "test",
+    name: "Explosive Rune",
     school: Schools.SIGILIST,
     baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    range: [Ranges.TOUCH],
+    description: ""
   },
   {
-    name: "test",
+    name: "Furious Quill",
     school: Schools.SIGILIST,
     baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    range: [Ranges.LOS],
+    description: ""
   },
   {
-    name: "test",
+    name: "Power Word",
     school: Schools.SIGILIST,
-    baseCastingNumber: 10,
+    baseCastingNumber: 14,
     range: [Ranges.AREA],
-    description: "Test spell"
+    description: ""
   },
   {
-    name: "test",
+    name: "Push",
     school: Schools.SIGILIST,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 8,
+    range: [Ranges.LOS],
+    description: ""
   },
   {
-    name: "test",
+    name: "Write Scroll",
     school: Schools.SIGILIST,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 12,
+    range: [Ranges.OUTOFGAME],
+    description: ""
   },
   // Soothsayer.
   {
-    name: "test",
+    name: "Awareness",
     school: Schools.SOOTHSAYER,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 8,
+    range: [Ranges.SELF],
+    description: "e spellcaster to add +1 to his warband’s rest of the aere. Multiple Castings of this"
   },
   {
-    name: "test",
+    name: "Combat Awareness",
     school: Schools.SOOTHSAYER,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 12,
+    range: [Ranges.TOUCH],
+    description: "This spell gives the target a magic insight into the moves his — opponent will attempt in a fight. It gives the target a +2 Fight stat for the remainder of the game. Multiple castings of this spell on the same target have no effect."
   },
   {
-    name: "test",
+    name: "Forget Spell",
     school: Schools.SOOTHSAYER,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 12,
+    range: [Ranges.LOS],
+    description: "‘The spelicaster picks one spell known by the target and causes im to temporarily forget how to cast it. The target may make a Will roll to attempt resist the effects of this spell — i) \" wnsuocessful, the he may not cast that spell for the rer | of the game."
   },
   {
-    name: "test",
+    name: "Mind Control",
     school: Schools.SOOTHSAYER,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 12,
+    range: [Ranges.LOS],
+    description: "Will roll against the casting roll, he temporarily joins the spe!lcaster’s warband and can be activated as normal during the ‘ior phase of the spellcaster's turn. After each activation, the ‘ may make a Will roll versus the casting roll to shake off ‘|< effects. A spellcaster may only have one active Mind"
   },
   {
-    name: "test",
+    name: "Reveal Invisibel",
     school: Schools.SOOTHSAYER,
-    baseCastingNumber: 10,
+    baseCastingNumber: 8,
     range: [Ranges.AREA],
-    description: "Test spell"
+    description: "- ‘Spell cancels all Invisibility spells within 24” of the caster."
   },
   {
-    name: "test",
+    name: "Reveal Secret",
     school: Schools.SOOTHSAYER,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 12,
+    range: [Ranges.OUTOFGAME],
+    description: "This spell reveals the location of secret treasure, and may be cast immediately before a game. If successful, the spellcaster’s warband may place one additional treasure token within 6° of their deployment area. Only one extra treasure per warband may be placed in this way each game."
   },
   {
-    name: "test",
+    name: "Will Power",
     school: Schools.SOOTHSAYER,
     baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    range: [Ranges.LOS],
+    description: ""
   },
   {
-    name: "test",
+    name: "Wizard Eye",
     school: Schools.SOOTHSAYER,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 8,
+    range: [Ranges.LOS],
+    description: ""
   },
   // Summoner.
   {
-    name: "test",
+    name: "Bind Demon",
     school: Schools.SUMMONER,
     baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    range: [Ranges.LOS],
+    description: "he target demon must make an immediate Will roll versus th Casting roll. If it fails, the spelicaster gains control of the ~ demon for the rest of the game. A spellcaster may only have one bound demon at a time."
   },
   {
-    name: "test",
+    name: "Imp",
     school: Schools.SUMMONER,
     baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    range: [Ranges.LOS],
+    description: "An imp immediately appears, anywhere within the spelicaster’s line of sight, but no closer than 3” to another figure. The j imp follows the normal rules for creatures and will act in the next creature phase. If the same spelicaster casts this spell a second time, the first imp will immediately vanish."
   },
   {
-    name: "test",
+    name: "Leap",
     school: Schools.SUMMONER,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 8,
+    range: [Ranges.LOS],
+    description: "The target makes an immediate 10” move in any direction, including vertically. This move is not hindered by any terrain unless that terrain is over 10” high. Target may take no othe: action this turn. This spell cannot be used to move a figure combat."
   },
   {
-    name: "test",
+    name: "Plague of Insects",
     school: Schools.SUMMONER,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 12,
+    range: [Ranges.LOS],
+    description: "The target figure is attacked by a cloud of stinging or biting insects that irritate and distract. The cloud of insects has a 1” radius centred on, and moving with, the target figure. It affects all figures, including the target figure, fully or partially within this radius. While being pestered by the insects, a figure has -4 ‘ight and -4 Shoot. The target figure must pass a Will roll ‘he original casting roll at the start of his activation in ai off all the insects. Other figures within the radius move away to escape. A figure may only ever be one Plague of Insects, whether as a target or by virtue of being within the 1” radius."
   },
   {
-    name: "test",
+    name: "Planar Tear",
     school: Schools.SUMMONER,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 12,
+    range: [Ranges.LOS],
+    description: "The spelicaster creates a small tear in the fabric of the universe. This rift is painful to humans and creatures, but lethal to demons. The spelicaster selects a target point. All figures within 2” of that point must make a Will roll versus the casting toll or suffer 2 points of damage. Demons that fail the Will roll take damage equal to the casting roll."
   },
   {
-    name: "test",
+    name: "Plane Walk",
     school: Schools.SUMMONER,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 14,
+    range: [Ranges.SELF],
+    description: "Although the spellcaster remains in the same physical locaton, he briefly moves between planes. Until his next activiation, he can ignore all terrain when moving, walking through walls and across chasms. He may not be the target of any shooting attacks or spells. The spelicaster will never be considered in combat during the tum, nor can he be attacked by any figure. However, he also may not pick up treasure, OF any way affect other characters or terrain on the board. If he is camying treasure, he drops it. It is incredibly draining to move between planes of existence, so if a spelicaster attempts to cast this spell in a second consecutive turn, he suffers a -5 modifier. He suffers a -10 modifier if he attempts it three tums in a row and -15 on the fourth tum and beyond."
   },
   {
-    name: "test",
+    name: "Possess",
     school: Schools.SUMMONER,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 12,
+    range: [Ranges.LOS],
+    description: ""
   },
   {
-    name: "test",
+    name: "Summon Demon",
     school: Schools.SUMMONER,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 12,
+    range: [Ranges.TOUCH],
+    description: "if successfully cast, a demon is immediately placed on the table win 1° of he sgeiinartes key not he peand aeniahe me."
   },
   // Thaumaturge.
   {
-    name: "test",
+    name: "Banish",
     school: Schools.THAUMATURGE,
     baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    range: [Ranges.LOS],
+    description: "if successfully cast, all demons within line of sight of the spellcaster must pass an immediate Will roll versus the casting roll or be removed from the game."
   },
   {
-    name: "test",
+    name: "Blinding Light",
     school: Schools.THAUMATURGE,
     baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    range: [Ranges.LOS],
+    description: "The target must make an immediate Will roll versus the casting roll. If he fails, he may not attack, shoot, or cast Line of Sight spells. His Fight stat is reduced to +0 and Move to 1. At the start of each turn, the figure may attempt to break the spell by making another Will roll against the sare target, otherwise the effects last until the end of the game."
   },
   {
-    name: "test",
+    name: "Circle of Protection",
     school: Schools.THAUMATURGE,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 12,
+    range: [Ranges.TOUCH],
+    description: "Creates a circle with a 3” diameter that no demon can enter or pass through. This spell has no effect on a possessed individual. A spellcaster may only have one active circie “7 protection at a time, but he does not have to remain"
   },
   {
-    name: "test",
+    name: "Dispel",
     school: Schools.THAUMATURGE,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 12,
+    range: [Ranges.LOS],
+    description: "Immediately cancels the ongoing effect of any one spell. It cannot unsummon a creature, but it can cancel the control of a creature.<Paste>"
   },
   {
-    name: "test",
+    name: "Heal",
     school: Schools.THAUMATURGE,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 8,
+    range: [Ranges.TOUCH],
+    description: "This spell restores 5 points of Health to the target model. This Spell cannot take a model above its starting health."
   },
   {
-    name: "test",
+    name: "Miraculous Cure",
     school: Schools.THAUMATURGE,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 12,
+    range: [Ranges.OUTOFGAME],
+    description: "This spell removes all of the effects of one type of Permanent Injury. For example, a wizard suffering from Lost Fingers regrows all his missing digits, regardless of how many times he has suffered that particular injury."
   },
   {
-    name: "test",
+    name: "Restore Life",
     school: Schools.THAUMATURGE,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 20,
+    range: [Ranges.OUTOFGAME],
+    description: "Spell can only be cast by a wizard. A wizard may cast this mediately after a game in which a member of his died. If successful, that figure is brought back to May return to action in the very next game."
   },
   {
-    name: "test",
+    name: "Shield",
     school: Schools.THAUMATURGE,
     baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    range: [Ranges.LOS],
+    description: "The target receives +2 Armour for the rest of the game. Multiple Shield spells on the same target have no effect."
   },
   // Witch.
   {
-    name: "test",
+    name: "Animal Companion",
     school: Schools.WITCH,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 8,
+    range: [Ranges.OUTOFGAME],
+    description: "TODO place of a soldier fe the purtoges of fmaximum size. Animal companions may not collect treasure or ems. They may be controlled by another spellcaster using the Control Animal spell, although they will re-join their original warband after the game. Animal companions are more strong-willed than wild examples of their species — give them +2 to the Will stat found in the appropriate Bestiary entry. A spellcaster may only have one animal companion at any time."
   },
   {
-    name: "test",
+    name: "Brew Potion",
     school: Schools.WITCH,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 12,
+    range: [Ranges.OUTOFGAME],
+    description: "A spellcaster may attempt to cast this spell before the game. If successful, he gains one potion of any type (except Elixir of Life). This potion may be given to any member of his warband."
   },
   {
-    name: "test",
+    name: "Control Animal",
     school: Schools.WITCH,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 12,
+    range: [Ranges.LOS],
+    description: "lf successfully cast, the target animal must make an immediate Will roll versus the casting roll. If the roll fails, the spellcaster gains control of the animal for the rest of the game. A spellcaster can only control one animal at a time."
   },
   {
-    name: "test",
+    name: "Curse",
     school: Schools.WITCH,
     baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    range: [Ranges.LOS],
+    description: "The target must pass a Will roll versus the casting roll or suffer -1 to its Fight, Shoot, and Will stats for the rest of the game. This spell may be cast on the same target up to five times, for a maximum of -5 to each of the three stats."
   },
   {
-    name: "test",
+    name: "Familar",
     school: Schools.WITCH,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 8,
+    range: [Ranges.OUTOFGAME],
+    description: "A spellcaster may attempt to cast this spell before any game. If successful, he gains a familiar in the form of a small creature of his choosing. A spellcaster with a familiar gains +2 Health (write as a split stat). If the spellcaster is ever reduced to his last point of health, the familiar is destroyed. At the start of the next game, the spellcaster will revert to his normal health, unless another Familiar spell is successfully cast. This additional health may take a spelicaster over his usual maximum for the stat."
   },
   {
-    name: "test",
+    name: "Fog",
     school: Schools.WITCH,
-    baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    baseCastingNumber: 8,
+    range: [Ranges.LOS],
+    description: "A line of fog, 6” long, 3” high and 1” thick settles across the battlefield within line of sight of the caster (use cotton or paper to mark the patch of fog). Figures can move through the fog with no difficulty, but no-one may draw line of sight through it. At the start of each new tur, roll a d20. Ona result of 19 or 20 the fog dissipates and is removed from the table."
   },
   {
-    name: "test",
+    name: "Mud",
     school: Schools.WITCH,
     baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    range: [Ranges.LOS],
+    description: "All ground within a 3\" radius for a target point becomes rough ground for the rest of the game."
   },
   {
-    name: "test",
+    name: "Poison Dart",
     school: Schools.WITCH,
     baseCastingNumber: 10,
-    range: [Ranges.AREA],
-    description: "Test spell"
+    range: [Ranges.LOS],
+    description: "The spellcaster flings a small dart coated in a potent poison The spellcaster makes an immediate +5 shooting attack agains any figure in line of sight. If the attack beats the targ ts : Armour it causes no damage, but he loses standard actions per activation for tl ft"
   }
 ];
 
