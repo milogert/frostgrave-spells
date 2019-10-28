@@ -361,42 +361,42 @@ const allSpellsNoId = [
     school: Schools.SIGILIST,
     baseCastingNumber: 8,
     range: [Ranges.OUTOFGAME],
-    description: ""
+    description: "This spell can only be cast by a wizard, and allows him to absorb the knowledge from a written work without having to read it. A wizard immediately gains 50 experience points for casting this spell to represent the speed with which he can gain knowledge. This spell may only be cast after a game in which the wizard was not reduced to 0 Health."
   },
   {
     name: "Create Grimoire",
     school: Schools.SIGILIST,
     baseCastingNumber: 12,
     range: [Ranges.OUTOFGAME],
-    description: ""
+    description: "This spell allows a spellcaster to create a grimoire containing one spell that he already knows. In order to create a grimoire, the spellcaster must first cast Create Grimoire, and then the spell he wishes to place into the grimoire (even if it is not usually and Out of Game spell). If both are successfully cast, the grimoire is create and the wizard may then sell it."
   },
   {
     name: "Draining Word",
     school: Schools.SIGILIST,
     baseCastingNumber: 14,
     range: [Ranges.AREA],
-    description: ""
+    description: "This spell draws a bright rune of power in the sky. The spellcaster may choose one spell for the Draining Word to affect. All rolls to attempt to cast that particular spell are at -3 for the rest of the game. A spellcaster may only have one Draining Word spell in effect at any given time."
   },
   {
     name: "Explosive Rune",
     school: Schools.SIGILIST,
     baseCastingNumber: 10,
     range: [Ranges.TOUCH],
-    description: ""
+    description: "The spellcaster draws a bright, flowing rune of power on the ground or a wall. A marker should be placed on the table to represent the rune. If any character or creature that was not part of the spellcaster's warband at the start of the game comes within 1\" of the run, it explodes, and every figure, friend or foe, within 2\" suffers an immediate +5 shooting attack. A spellcaster may have up to three such runes in play any time. At the end of any turn, he may choose to cancel any one of his runes. If the spellcaster is removed from play any runes he placed are also removed."
   },
   {
     name: "Furious Quill",
     school: Schools.SIGILIST,
     baseCastingNumber: 10,
     range: [Ranges.LOS],
-    description: ""
+    description: "The target is attacked by a sharp animated quill. Although the quill does no damage, it is highly irritating and extremely distracting. While under attack, the target suffers -1 Move, -2 Fight, -4 Shoot, and -2 to any casting rolls. At the start of the target's activation each turn, he may make a Will roll versus the casting roll - if successful, the quill is caught and destroyed. Multiple castings of Furious Quill against the same target have no effect. This spell may be cast against a figure in combat with no penalty."
   },
   {
     name: "Power Word",
     school: Schools.SIGILIST,
     baseCastingNumber: 14,
     range: [Ranges.AREA],
-    description: ""
+    description: "This spell draws a bright rune of power in the sky. The spellcaster may pick one spell for the Power Word to affect. All rolls to cast that particular spell are at +3 for every spellcaster for the rest of the game. Each spellcaster may have only one Power Word in effect at any given time."
   },
   {
     name: "Push",
@@ -418,56 +418,56 @@ const allSpellsNoId = [
     school: Schools.SOOTHSAYER,
     baseCastingNumber: 8,
     range: [Ranges.SELF],
-    description: "e spellcaster to add +1 to his warband’s rest of the aere. Multiple Castings of this"
+    description: "This spell allows the spellcaster to add +1 to his warband's initiative rolls for the rest of the game. Multiple Castings of this spell have no effect, but it may be cast again if the original spellcaster is removed from play."
   },
   {
     name: "Combat Awareness",
     school: Schools.SOOTHSAYER,
     baseCastingNumber: 12,
     range: [Ranges.TOUCH],
-    description: "This spell gives the target a magic insight into the moves his — opponent will attempt in a fight. It gives the target a +2 Fight stat for the remainder of the game. Multiple castings of this spell on the same target have no effect."
+    description: "This spell gives the target a magic insight into the moves his opponent will attempt in a fight. It gives the target a +2 Fight stat for the remainder of the game. Multiple castings of this spell on the same target have no effect."
   },
   {
     name: "Forget Spell",
     school: Schools.SOOTHSAYER,
     baseCastingNumber: 12,
     range: [Ranges.LOS],
-    description: "‘The spelicaster picks one spell known by the target and causes im to temporarily forget how to cast it. The target may make a Will roll to attempt resist the effects of this spell — i) \" wnsuocessful, the he may not cast that spell for the rer | of the game."
+    description: "‘The spellcaster picks one spell known by the target and causes him to temporarily forget how to cast it. The target may make a Will roll to attempt resist the effects of this spell — if unsuccessful, the he may not cast that spell for the remainder of the game."
   },
   {
     name: "Mind Control",
     school: Schools.SOOTHSAYER,
     baseCastingNumber: 12,
     range: [Ranges.LOS],
-    description: "Will roll against the casting roll, he temporarily joins the spe!lcaster’s warband and can be activated as normal during the ‘ior phase of the spellcaster's turn. After each activation, the ‘ may make a Will roll versus the casting roll to shake off ‘|< effects. A spellcaster may only have one active Mind"
+    description: "This spell only affects soldiers and creatures. If the target fails a Will roll against the casting roll, he temporarily joins the spellcaster's warband and can be activated as normal during the soldier phase of the spellcaster's turn. After each activation, the TODO may make a Will roll versus the casting roll to shake off spell's effects. A spellcaster may only have one active Mind Control spell at a time."
   },
   {
-    name: "Reveal Invisibel",
+    name: "Reveal Invisible",
     school: Schools.SOOTHSAYER,
     baseCastingNumber: 8,
     range: [Ranges.AREA],
-    description: "- ‘Spell cancels all Invisibility spells within 24” of the caster."
+    description: "This spell cancels all Invisibility spells within 24\" of the caster."
   },
   {
     name: "Reveal Secret",
     school: Schools.SOOTHSAYER,
     baseCastingNumber: 12,
     range: [Ranges.OUTOFGAME],
-    description: "This spell reveals the location of secret treasure, and may be cast immediately before a game. If successful, the spellcaster’s warband may place one additional treasure token within 6° of their deployment area. Only one extra treasure per warband may be placed in this way each game."
+    description: "This spell reveals the location of secret treasure, and may be cast immediately before a game. If successful, the spellcaster's warband may place one additional treasure token within 6\" of their deployment area. Only one extra treasure per warband may be placed in this way each game."
   },
   {
     name: "Will Power",
     school: Schools.SOOTHSAYER,
     baseCastingNumber: 10,
     range: [Ranges.LOS],
-    description: ""
+    description: "Target gains +3 Will for the rest of the game. Multiple Will Power spells on the same target have no effect."
   },
   {
     name: "Wizard Eye",
     school: Schools.SOOTHSAYER,
     baseCastingNumber: 8,
     range: [Ranges.LOS],
-    description: ""
+    description: "This spell may be cast on any terrain feature within 12\" that has a flat side, such as most ruins. Place a token next to the terrain feature to represent the Wizard Eye. For the rest of the game, the spellcaster may choose to draw line of sight from the Wizard Eye instead of from his figure when casting spells. The Wizard Eye has 180-degree field of vision. A spellcaster may only maintain one Wizard Eye at a time."
   },
   // Summoner.
   {
@@ -475,56 +475,56 @@ const allSpellsNoId = [
     school: Schools.SUMMONER,
     baseCastingNumber: 10,
     range: [Ranges.LOS],
-    description: "he target demon must make an immediate Will roll versus th Casting roll. If it fails, the spelicaster gains control of the ~ demon for the rest of the game. A spellcaster may only have one bound demon at a time."
+    description: "The target demon must make an immediate Will roll versus the Casting roll. If it fails, the spellcaster gains control of the demon for the rest of the game. A spellcaster may only have one bound demon at a time."
   },
   {
     name: "Imp",
     school: Schools.SUMMONER,
     baseCastingNumber: 10,
     range: [Ranges.LOS],
-    description: "An imp immediately appears, anywhere within the spelicaster’s line of sight, but no closer than 3” to another figure. The j imp follows the normal rules for creatures and will act in the next creature phase. If the same spelicaster casts this spell a second time, the first imp will immediately vanish."
+    description: "An imp immediately appears, anywhere within the spellcaster's line of sight, but no closer than 3\" to another figure. The imp follows the normal rules for creatures and will act in the next creature phase. If the same spellcaster casts this spell a second time, the first imp will immediately vanish."
   },
   {
     name: "Leap",
     school: Schools.SUMMONER,
     baseCastingNumber: 8,
     range: [Ranges.LOS],
-    description: "The target makes an immediate 10” move in any direction, including vertically. This move is not hindered by any terrain unless that terrain is over 10” high. Target may take no othe: action this turn. This spell cannot be used to move a figure combat."
+    description: "The target makes an immediate 10\" move in any direction, including vertically. This move is not hindered by any terrain unless that terrain is over 10\" high. Target may take no other action this turn. This spell cannot be used to move a figure into combat."
   },
   {
     name: "Plague of Insects",
     school: Schools.SUMMONER,
     baseCastingNumber: 12,
     range: [Ranges.LOS],
-    description: "The target figure is attacked by a cloud of stinging or biting insects that irritate and distract. The cloud of insects has a 1” radius centred on, and moving with, the target figure. It affects all figures, including the target figure, fully or partially within this radius. While being pestered by the insects, a figure has -4 ‘ight and -4 Shoot. The target figure must pass a Will roll ‘he original casting roll at the start of his activation in ai off all the insects. Other figures within the radius move away to escape. A figure may only ever be one Plague of Insects, whether as a target or by virtue of being within the 1” radius."
+    description: "The target figure is attacked by a cloud of stinging or biting insects that irritate and distract. The cloud of insects has a 1\" radius centred on, and moving with, the target figure. It affects all figures, including the target figure, fully or partially within this radius. While being pestered by the insects, a figure has -4 Fight and -4 Shoot. The target figure must pass a Will roll TODO vs the original casting roll at the start of his activation in order to beat off all the insects. Other figures within the radius may move away to escape. A figure may only ever be affected by one Plague of Insects, whether as a target or by virtue of being within the 1\" radius."
   },
   {
     name: "Planar Tear",
     school: Schools.SUMMONER,
     baseCastingNumber: 12,
     range: [Ranges.LOS],
-    description: "The spelicaster creates a small tear in the fabric of the universe. This rift is painful to humans and creatures, but lethal to demons. The spelicaster selects a target point. All figures within 2” of that point must make a Will roll versus the casting toll or suffer 2 points of damage. Demons that fail the Will roll take damage equal to the casting roll."
+    description: "The spellcaster creates a small tear in the fabric of the universe. This rift is painful to humans and creatures, but lethal to demons. The spellcaster selects a target point. All figures within 2\" of that point must make a Will roll versus the casting toll or suffer 2 points of damage. Demons that fail the Will roll take damage equal to the casting roll."
   },
   {
     name: "Plane Walk",
     school: Schools.SUMMONER,
     baseCastingNumber: 14,
     range: [Ranges.SELF],
-    description: "Although the spellcaster remains in the same physical locaton, he briefly moves between planes. Until his next activiation, he can ignore all terrain when moving, walking through walls and across chasms. He may not be the target of any shooting attacks or spells. The spelicaster will never be considered in combat during the tum, nor can he be attacked by any figure. However, he also may not pick up treasure, OF any way affect other characters or terrain on the board. If he is camying treasure, he drops it. It is incredibly draining to move between planes of existence, so if a spelicaster attempts to cast this spell in a second consecutive turn, he suffers a -5 modifier. He suffers a -10 modifier if he attempts it three tums in a row and -15 on the fourth tum and beyond."
+    description: "Although the spellcaster remains in the same physical location, he briefly moves between planes. Until his next activation, he can ignore all terrain when moving, walking through walls and across chasms. He may not be the target of any shooting attacks or spells. The spellcaster will never be considered in combat during the tum, nor can he be attacked by any figure. However, he also may not pick up treasure, OF any way affect other characters or terrain on the board. If he is carrying treasure, he drops it. It is incredibly draining to move between planes of existence, so if a spellcaster attempts to cast this spell in a second consecutive turn, he suffers a -5 modifier. He suffers a -10 modifier if he attempts it three turns in a row and -15 on the fourth turn and beyond."
   },
   {
     name: "Possess",
     school: Schools.SUMMONER,
     baseCastingNumber: 12,
     range: [Ranges.LOS],
-    description: ""
+    description: "This spell may only be cast on a member of the spellcaster's own warband. The target is possessed by a demon and gains +2 Fight, +2 Armour, and +2 Will for the remainder of the battle and counts as a demon for all intents and purposes (e.g. Banish, Bind Demon). If removed from the game for any reason (such as being hit by a Banish spell), check for the character's survival as normal. A spellcaster may only have one Possess spell active at a time."
   },
   {
     name: "Summon Demon",
     school: Schools.SUMMONER,
     baseCastingNumber: 12,
     range: [Ranges.TOUCH],
-    description: "if successfully cast, a demon is immediately placed on the table win 1° of he sgeiinartes key not he peand aeniahe me."
+    description: "If successfully cast, a demon is immediately placed on the table within 1\" of the spellcaster. It may not be placed straight into combat. The demon is treated as though it is already subject to a Bind Demon spell. A spellcaster may only have one bound demon at a time. The type of demon summoned depends on the amount by which the spellcaster succeeded on his casting roll: 1-5 Imp, 6-12 Minor Demon, 13+ Major Demon (see Chapter 6: Bestiary). If a spellcaster rolls a 1 while attempting to cast this spell, a demon is placed on the table and immediately attacks the summoner. The type of demon is determined by using the same chart as above, but using the amount by which the casting roll was failed."
   },
   // Thaumaturge.
   {
@@ -532,28 +532,28 @@ const allSpellsNoId = [
     school: Schools.THAUMATURGE,
     baseCastingNumber: 10,
     range: [Ranges.LOS],
-    description: "if successfully cast, all demons within line of sight of the spellcaster must pass an immediate Will roll versus the casting roll or be removed from the game."
+    description: "If successfully cast, all demons within line of sight of the spellcaster must pass an immediate Will roll versus the casting roll or be removed from the game."
   },
   {
     name: "Blinding Light",
     school: Schools.THAUMATURGE,
     baseCastingNumber: 10,
     range: [Ranges.LOS],
-    description: "The target must make an immediate Will roll versus the casting roll. If he fails, he may not attack, shoot, or cast Line of Sight spells. His Fight stat is reduced to +0 and Move to 1. At the start of each turn, the figure may attempt to break the spell by making another Will roll against the sare target, otherwise the effects last until the end of the game."
+    description: "The target must make an immediate Will roll versus the casting roll. If he fails, he may not attack, shoot, or cast Line of Sight spells. His Fight stat is reduced to +0 and Move to 1. At the start of each turn, the figure may attempt to break the spell by making another Will roll against the same target, otherwise the effects last until the end of the game."
   },
   {
     name: "Circle of Protection",
     school: Schools.THAUMATURGE,
     baseCastingNumber: 12,
     range: [Ranges.TOUCH],
-    description: "Creates a circle with a 3” diameter that no demon can enter or pass through. This spell has no effect on a possessed individual. A spellcaster may only have one active circie “7 protection at a time, but he does not have to remain"
+    description: "Creates a circle with a 3\" diameter that no demon can enter or pass through. This spell has no effect on a possessed individual. A spellcaster may only have one active circle of protection at a time, but he does not have to remain within it."
   },
   {
     name: "Dispel",
     school: Schools.THAUMATURGE,
     baseCastingNumber: 12,
     range: [Ranges.LOS],
-    description: "Immediately cancels the ongoing effect of any one spell. It cannot unsummon a creature, but it can cancel the control of a creature.<Paste>"
+    description: "Immediately cancels the ongoing effect of any one spell. It cannot unsummon a creature, but it can cancel the control of a creature."
   },
   {
     name: "Heal",
@@ -574,7 +574,7 @@ const allSpellsNoId = [
     school: Schools.THAUMATURGE,
     baseCastingNumber: 20,
     range: [Ranges.OUTOFGAME],
-    description: "Spell can only be cast by a wizard. A wizard may cast this mediately after a game in which a member of his died. If successful, that figure is brought back to May return to action in the very next game."
+    description: "This spell can only be cast by a wizard. A wizard may cast this immediately after a game in which a member of his warband has died. If successful, that figure is brought back to may return to action in the very next game."
   },
   {
     name: "Shield",
@@ -589,7 +589,7 @@ const allSpellsNoId = [
     school: Schools.WITCH,
     baseCastingNumber: 8,
     range: [Ranges.OUTOFGAME],
-    description: "TODO place of a soldier fe the purtoges of fmaximum size. Animal companions may not collect treasure or ems. They may be controlled by another spellcaster using the Control Animal spell, although they will re-join their original warband after the game. Animal companions are more strong-willed than wild examples of their species — give them +2 to the Will stat found in the appropriate Bestiary entry. A spellcaster may only have one animal companion at any time."
+    description: "The spellcaster summons an animal companion of his choice from the following options to join his warband: Bear, Wolf, Snow Leopard, Ice Toad (see Chapter 6: Bestiary). The animal takes the place of a soldier for the purposes of maximum warband size. Animal companions may not collect treasure or carry items. They may be controlled by another spellcaster using the Control Animal spell, although they will re-join their original warband after the game. Animal companions are more strong-willed than wild examples of their species — give them +2 to the Will stat found in the appropriate Bestiary entry. A spellcaster may only have one animal companion at any time."
   },
   {
     name: "Brew Potion",
@@ -603,7 +603,7 @@ const allSpellsNoId = [
     school: Schools.WITCH,
     baseCastingNumber: 12,
     range: [Ranges.LOS],
-    description: "lf successfully cast, the target animal must make an immediate Will roll versus the casting roll. If the roll fails, the spellcaster gains control of the animal for the rest of the game. A spellcaster can only control one animal at a time."
+    description: "If successfully cast, the target animal must make an immediate Will roll versus the casting roll. If the roll fails, the spellcaster gains control of the animal for the rest of the game. A spellcaster can only control one animal at a time."
   },
   {
     name: "Curse",
@@ -613,18 +613,18 @@ const allSpellsNoId = [
     description: "The target must pass a Will roll versus the casting roll or suffer -1 to its Fight, Shoot, and Will stats for the rest of the game. This spell may be cast on the same target up to five times, for a maximum of -5 to each of the three stats."
   },
   {
-    name: "Familar",
+    name: "Familiar",
     school: Schools.WITCH,
     baseCastingNumber: 8,
     range: [Ranges.OUTOFGAME],
-    description: "A spellcaster may attempt to cast this spell before any game. If successful, he gains a familiar in the form of a small creature of his choosing. A spellcaster with a familiar gains +2 Health (write as a split stat). If the spellcaster is ever reduced to his last point of health, the familiar is destroyed. At the start of the next game, the spellcaster will revert to his normal health, unless another Familiar spell is successfully cast. This additional health may take a spelicaster over his usual maximum for the stat."
+    description: "A spellcaster may attempt to cast this spell before any game. If successful, he gains a familiar in the form of a small creature of his choosing. A spellcaster with a familiar gains +2 Health (write as a split stat). If the spellcaster is ever reduced to his last point of health, the familiar is destroyed. At the start of the next game, the spellcaster will revert to his normal health, unless another Familiar spell is successfully cast. This additional health may take a spellcaster over his usual maximum for the stat."
   },
   {
     name: "Fog",
     school: Schools.WITCH,
     baseCastingNumber: 8,
     range: [Ranges.LOS],
-    description: "A line of fog, 6” long, 3” high and 1” thick settles across the battlefield within line of sight of the caster (use cotton or paper to mark the patch of fog). Figures can move through the fog with no difficulty, but no-one may draw line of sight through it. At the start of each new tur, roll a d20. Ona result of 19 or 20 the fog dissipates and is removed from the table."
+    description: "A line of fog, 6\" long, 3\" high and 1\" thick settles across the battlefield within line of sight of the caster (use cotton or paper to mark the patch of fog). Figures can move through the fog with no difficulty, but no-one may draw line of sight through it. At the start of each new turn, roll a d20. On a result of 19 or 20 the fog dissipates and is removed from the table."
   },
   {
     name: "Mud",
@@ -638,7 +638,7 @@ const allSpellsNoId = [
     school: Schools.WITCH,
     baseCastingNumber: 10,
     range: [Ranges.LOS],
-    description: "The spellcaster flings a small dart coated in a potent poison The spellcaster makes an immediate +5 shooting attack agains any figure in line of sight. If the attack beats the targ ts : Armour it causes no damage, but he loses standard actions per activation for tl ft"
+    description: "The spellcaster flings a small dart coated in a potent poison. The spellcaster makes an immediate +5 shooting attack against any figure in line of sight. If the attack beats the target's Armour it causes no damage, but he loses standard actions per activation for the rest of the game, or until healed by either a Heal spell or a Healing Potion. The remaining action does not have to be the otherwise compulsory movement. Multiple Poison Darts against the same figure have no effect."
   }
 ];
 
