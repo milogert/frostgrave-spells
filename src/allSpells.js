@@ -304,56 +304,56 @@ const allSpellsNoId = [
     school: Schools.NECROMANCER,
     baseCastingNumber: 8,
     range: [Ranges.LOS],
-    description: ""
+    description: "This spell fires a small, sharp shard of bone at a target. The spellcaster may make an immediate +5 shooting attack against any figure in line of sight. This does not count as a magic attack."
   },
   {
     name: "Bones of the Earth",
     school: Schools.NECROMANCER,
     baseCastingNumber: 10,
     range: [Ranges.LOS],
-    description: ""
+    description: "A skeletal hand reaches out of the ground and grabs the target's ankle. The target is held fast and may not move. Any magic form of movement will allow the target to escape the hand. Otherwise, the only way to escape the hand is to fight. The hand has Fight +0 and Health 1. If the hand is damaged, it vanishes, and the target is free. The spell may only be cast against a target that is standing on ground level. The maximum range for this spell is 18\"."
   },
   {
     name: "Control Undead",
     school: Schools.NECROMANCER,
     baseCastingNumber: 12,
     range: [Ranges.LOS],
-    description: ""
+    description: "If successfully cast, the target undead creature must make an immediate Will roll versus the casting roll. If the roll fails, the spellcaster gains control of the undead creature for the rest of the game. A spellcaster may only control one undead creature at a time."
   },
   {
     name: "Raise Zombie",
     school: Schools.NECROMANCER,
     baseCastingNumber: 8,
     range: [Ranges.OUTOFGAME, Ranges.TOUCH],
-    description: ""
+    description: "This spell can be used both 'Out of Game' and during the game. If successful, the spellcaster adds one zombie to his warband (see Chapter 6: Bestiary). If the spell is cast before the game, the zombie can be deployed normally. If it is cast during a game, the zombie appears in base contact with the spellcaster. A warband may only have one raised zombie at any one time. If the zombie is killed during a game, Raise Zombie can be cast again to create another. A raised zombie does not count towards the warband size limit and remains with a warband until the end of the game, at which point it crumbles into dust."
   },
   {
     name: "Reveal Death",
     school: Schools.NECROMANCER,
     baseCastingNumber: 12,
     range: [Ranges.LOS],
-    description: ""
+    description: "This spell causes the target to see a vision of his own death. The target must make an immediate Will roll versus the casting roll. If the target fails, he loses his next activation."
   },
   {
     name: "Spell Eater",
     school: Schools.NECROMANCER,
     baseCastingNumber: 12,
     range: [Ranges.LOS],
-    description: ""
+    description: "This spell cancels the effects of any one spell currently in play, and the spellcaster immediately takes 1 point of damage. It cannot unsummon a creature but it can cancel the control of a creature."
   },
   {
     name: "Steal Health",
     school: Schools.NECROMANCER,
     baseCastingNumber: 10,
     range: [Ranges.LOS],
-    description: ""
+    description: "The target must make an immediate Will roll versus the casting roll. If failed, the target immediately loses 3 Health and the spellcaster regains 3 Health. This may not take the spellcaster above his starting health. The spell has no effect on undead, constructs, or demons. A spellcaster may target a member of his own warband - if he does, however, the target will immediately 9and permanently) leave the warband and will move as quickly as possible off the board."
   },
   {
     name: "Strike Dead",
     school: Schools.NECROMANCER,
     baseCastingNumber: 18,
     range: [Ranges.LOS],
-    description: ""
+    description: "This spell may target a figure within 8\". The target must make a Will roll versus the casting roll or be immediately reduced to 0 Health. All figures may empower their Will roll to resist this spell, even non-spellcasters. The spellcaster immediately loses 1 Health upon attempting this spell (even if it is cast successfully), plus any additional loss incurred by failure or empowerment."
   },
   // Sigilist.
   {
@@ -403,14 +403,14 @@ const allSpellsNoId = [
     school: Schools.SIGILIST,
     baseCastingNumber: 8,
     range: [Ranges.LOS],
-    description: ""
+    description: "The target suffers an immediate +10 attack. Instead of taking damage from this attack, the target is moved 1\" directly away from the spellcaster for every point of damage he would have taken. If this pushes the target into a piece of terrain or the edge of the board, he stops immediately. Other figures to not stop (or get hit by) a pushed figure - they are assumed to step out of the way. If the target is pushed off a height, he suffers falling damage as normal."
   },
   {
     name: "Write Scroll",
     school: Schools.SIGILIST,
     baseCastingNumber: 12,
     range: [Ranges.OUTOFGAME],
-    description: ""
+    description: "A spellcaster may attempt to cast this spell once after every game. If successful, one scroll is create. The scroll must be of a spell that the spellcaster knows."
   },
   // Soothsayer.
   {
